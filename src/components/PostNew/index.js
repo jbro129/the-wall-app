@@ -46,8 +46,6 @@ function PostNew(props) {
 				<textarea
 					value={newText}
 					onChange={(e) => setNewText(e.target.value)}
-					rows="3"
-					cols="40"
 					placeholder="Your wall post here..."
 				></textarea>
 			</Modal.Body>

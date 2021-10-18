@@ -16,7 +16,7 @@ body {
 /* Header */
 
 .navbar-brand {
-	font-family: 'Gochi Hand', cursive;
+	font-family: 'Arimo', sans-serif;
 	font-size: 50px !important;
 	color: white !important;
 	text-shadow: 1px 1px 4px #000000;
@@ -59,19 +59,23 @@ body {
 }
 
 .card-title {
-	font-family: 'Gochi Hand', cursive;
+	font-family: 'Arimo', sans-serif;
 	font-size: 30px;
 	text-shadow: 1px 1px 1px #ffffff;
 }
 
 .card-text {
-	font-family: 'Gochi Hand', cursive;
+	font-family: 'Arimo', sans-serif;
 	font-style: italic;
 	color: rgb(214, 214, 214);
 	text-shadow: 1px 1px 1px #000000;
 }
 
-/* Wall */
+.modal-body > textarea {
+	width: 100%;
+}
+
+/* Modal */
 
 .modal-content {
 	background-color: #bf0000;
@@ -116,5 +120,18 @@ body {
 @media (max-width: 600px) {
 	.navbar {
 		flex-direction: column;
+	}
+	.navbar-brand {
+		font-size: 40px !important;
+	}
+	.modal-content {
+		width: 75%;
+		margin: auto;
+	}
+	.card-title {
+		font-size: 20px;
+	}
+	.card {
+		width: 250px;
 	}
 }
