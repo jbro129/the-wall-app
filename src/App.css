@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+/* App/Main */
+
+body {
+	background-color: #bf0000;
+	background-image: url('https://jonahs-wall-app.web.app/brick-wall.png');
+	min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header */
+
+.navbar-brand {
+	font-family: 'Gochi Hand', cursive;
+	font-size: 50px !important;
+	color: white !important;
+	text-shadow: 1px 1px 4px #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.signin-button,
+.signup-button,
+.post-button {
+	background-color: #ff1b1b;
+	background-image: url('https://jonahs-wall-app.web.app/brick-wall.png');
+	padding: 0.5rem 0.75rem;
+	margin-right: 1rem;
+}
+.signin-button:hover,
+.signup-button:hover,
+.post-button:hover {
+	color: white;
+	border-color: white;
+	transition: color 0.25s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+/* Wall */
+
+.card-columns {
+	display: flex;
+	justify-content: space-evenly;
+	justify-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+	background-color: #ff1b1b;
+	background-image: url('https://jonahs-wall-app.web.app/brick-wall.png');
+	margin: 0.5rem auto;
+	border: 1px solid #000000;
+	border-radius: 0;
+
+	width: 400px;
+	height: auto;
+}
+
+.card-title {
+	font-family: 'Gochi Hand', cursive;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+.card-text {
+	font-family: 'Gochi Hand', cursive;
+	font-style: italic;
+	color: rgb(214, 214, 214);
+	text-shadow: 1px 1px 1px #000000;
+}
+
+/* Wall */
+
+.modal-content {
+	background-color: #bf0000;
+	background-image: url('https://jonahs-wall-app.web.app/brick-wall.png');
+	border: 1.5px solid #000000;
+	border-radius: 0;
+	margin: auto;
+}
+
+.modal-footer {
+	justify-content: flex-start;
+}
+
+.form-label {
+	color: black;
+	font-size: 16px;
+}
+
+.close,
+.submitBtn {
+	color: black;
+	background-color: #ff1b1b;
+	background-image: url('https://jonahs-wall-app.web.app/brick-wall.png');
+	padding: 0.5rem 0.75rem;
+	border-width: 2px;
+	border-radius: 0;
+	border-color: #242424;
+}
+
+.close:hover,
+.submitBtn:hover {
+	color: white;
+	border-color: white;
+	background-color: #ff1b1b;
+	background-image: url('https://jonahs-wall-app.web.app/brick-wall.png');
+	transition: color 0.25s ease-in-out, border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+	.navbar {
+		flex-direction: column;
+	}
 }
