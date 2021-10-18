@@ -12,7 +12,7 @@ function Wall() {
 			.then((response) => response.json())
 			.then((data) => {
 				setWallsList(data)
-				console.log(data)
+				// console.log(data)
 			})
 			.catch()
 	}, [])

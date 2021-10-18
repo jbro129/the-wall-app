@@ -18,7 +18,7 @@ function SignInButton(props) {
 				const user = userCredential.user
 				setUser(user)
 				localStorage.setItem('user', JSON.stringify(user))
-				console.log('Logged In!')
+				// console.log('Logged In!')
 
 				setEmail('')
 				setPassword('')

@@ -17,7 +17,7 @@ function SignUpButton(props) {
 	const [password, setPassword] = useState('')
 
 	const handleSubmit = () => {
-		console.log(username, email, password)
+		// console.log(username, email, password)
 
 		const auth = getAuth(fire)
 		createUserWithEmailAndPassword(auth, email, password)
@@ -32,7 +32,7 @@ function SignUpButton(props) {
 						setUser(user)
 						localStorage.setItem('user', JSON.stringify(user))
 						updateCurrentUser(auth, user)
-						console.log('Signed Up!')
+						// console.log('Signed Up!')
 
 						setUserName('')
 						setEmail('')
