@@ -17,6 +17,7 @@ function SignInButton(props) {
 				// Signed in
 				const user = userCredential.user
 				setUser(user)
+				// keep user signin even if the page is refreshed
 				localStorage.setItem('user', JSON.stringify(user))
 				// console.log('Logged In!')
 

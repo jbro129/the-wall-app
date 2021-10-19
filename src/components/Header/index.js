@@ -13,6 +13,7 @@ function Header() {
 	const [showSignUp, setShowSignUp] = useState(false)
 
 	useEffect(() => {
+		// keep user signin even if the page is refreshed
 		const localUser = localStorage.getItem('user')
 		setUser(localUser ? JSON.parse(localUser) : '')
 	}, [])

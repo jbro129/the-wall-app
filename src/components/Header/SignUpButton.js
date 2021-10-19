@@ -25,12 +25,16 @@ function SignUpButton(props) {
 				const user = userCredential.user
 				// console.log(user)
 
+				// add the displayName to the user
 				updateProfile(user, {
 					displayName: username,
 				})
 					.then(() => {
 						setUser(user)
+						// keep user signin even if the page is refreshed
 						localStorage.setItem('user', JSON.stringify(user))
+						
+						// add the displayName to the user
 						updateCurrentUser(auth, user)
 						// console.log('Signed Up!')
 
